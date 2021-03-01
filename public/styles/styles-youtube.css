@@ -2,16 +2,31 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
+:root{
+    --textcolor: rgba(150, 150, 150, 0.959);
 }
 
+body {
+    margin: 0;
+    
+}
+/*
 .icon-placeholder {
     width: 25px;
     height: 25px;
     background-color: #CC0202;
     margin-right: 3%;
+}*/
+
+
+
+.fa-search:before{
+    content: "\f002";
+    padding:19px;
+    
 }
+
+
 
 
 /* TOP ROW WITH SEARCH BAR  */
@@ -24,6 +39,7 @@ body {
     justify-content: space-between;
     margin: 10px 0;
     padding: 0 30px;
+    color: var(--textcolor);
 }
 
 .container-top-row-left {
@@ -33,6 +49,7 @@ body {
     align-items: center;
     width: 15%;
     margin-left: 25px;
+    color: var(--textcolor);
 }
 
 .logo-youtube {
@@ -55,7 +72,7 @@ body {
 .icon-placeholder-search {
     width: 50px;
     height: 25px;
-    background-color: #CC0202;
+
 }
 
 .container-top-row-right {
@@ -65,6 +82,7 @@ body {
     align-items: center;
     margin-right: 25px;
     width: 15%;
+    padding: 15px;
 }
 
 .container-circle {
@@ -84,6 +102,7 @@ body {
 .container-main {
     display: flex;
     flex-direction: row;
+
     margin: 0;
 }
 
@@ -95,6 +114,7 @@ body {
     flex-direction: column;
     padding: 40px 0;
     width: 19%;
+    color: var(--textcolor);
 }
 
 .container-left-row {
@@ -130,15 +150,19 @@ h4 {
     font-weight: 100;
 }
 
+i{
+    padding-right: 6px;
+}
 /* VIDEOS START HERE */
 
 .container-right {
     padding: 30px 0;
     width: 81%;
+    
     background-color: #F9F9F9;
     display: flex;    
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    
 }
 
 
@@ -146,10 +170,10 @@ h4 {
 .container-video-whole {
     display: flex;
     flex-direction: column;
+    
     width: 270px;
     height: 275px;
-
-
+    margin: 10px;
 }
 
 .container-video-placeholder {
@@ -186,6 +210,7 @@ h4 {
     display: flex;
     flex-direction: column;
     margin-left: 5px;
+    
 }
 
 .video-title {
@@ -199,25 +224,4 @@ h4 {
 video{
     width:100%;
     height:150px;
-}
-
-.row1{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.row2{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.row3{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.row4{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
